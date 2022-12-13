@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import CommentInput from "./components/comment/comment.jsx";
+import "./App.css";
+import Router from "./shared/Router";
 
 function App() {
-  return <CommentInput />;
+  return <Router />;
 }
 
 export default App;
