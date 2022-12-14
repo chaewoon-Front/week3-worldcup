@@ -4,7 +4,8 @@ import { configureStore } from "@reduxjs/toolkit";
 /**
  * import 해온 것은 slice.reducer 입니다.
  */
-import post from "../modules/AppSlisce";
+// import post from "../modules/AppSlisce";
+import post from "../modules/commentSlice";
 
 /**
  * 모듈(Slice)이 여러개인 경우
