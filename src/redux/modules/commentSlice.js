@@ -37,6 +37,24 @@ export const __postPost = createAsyncThunk(
   }
 );
 
+export const __postComment = createAsyncThunk(
+  "postComment",
+  async (payload, thunkAPI) => {
+    try {
+      console.log("payload", payload);
+      const { data } = await axios.post(
+        `http://localhost:3001/comments`,
+        payload
+      );
+      console.log(data);
+      return thunkAPI.fulfillWithValue(data.data);
+    } catch (error) {
+      console.log("데이터를 불러오지 못했습니다");
+      return thunkAPI.rejectWithValue(error);
+    }
+  }
+);
+
 const postSlice = createSlice({
   name: "comment",
   initialState,

@@ -1,32 +1,34 @@
 {
   "post": [
     {
-      "id": 1,
-      "title": "제목입니다.",
-      "name": "깨방정 하는 사람",
-      "context": "응원합니다 한국",
-      "comment": [
-        {
-          "commentId": 1,
-          "commenText": "이거 축구 완전 못하는 건가? ㅠㅠ"
-        }
-      ]
+      "id": 2,
+      "title": "쉽게 쉽게 갑시다.",
+      "name": "쉬운 게 가장 최고입니다",
+      "context": "응원합니다 한국"
     },
     {
+      "id": 3,
+      "title": "쉽게 쉽게 갑시다.",
+      "name": "쉬운 게 가장 최고입니다",
+      "context": "응원합니다 한국"
+    }
+  ],
+
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "comment": "같은 댓글만 보임"
+    },
+    {
+      "postId": 2,
       "id": 2,
-      "title": "제목입니다.",
-      "name": "깨방정 하는 사람",
-      "context": "응원합니다 한국",
-      "comment": [
-        {
-          "commentId": 1,
-          "commenText": "축구 합니다!"
-        },
-        {
-          "commentId": 2,
-          "commenText": "축구 아이 합니다"
-        }
-      ]
+      "comment": "같은 댓글만 보임"
+    },
+    {
+      "postId": 2,
+      "id": 3,
+      "comment": "입력창"
     }
   ]
 }
