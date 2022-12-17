@@ -73,12 +73,7 @@ export const __postComments = createAsyncThunk(
   async (payload, thunkAPI) => {
     try {
       console.log("payload", payload);
-      const { data } = await axios.post(
-        `http://localhost:3001/comments`,
-        payload
-      );
-      console.log(data);
-      return thunkAPI.fulfillWithValue(data.data);
+      await axios.post(`http://localhost:3001/comments`, payload);
     } catch (error) {
       console.log("데이터를 불러오지 못했습니다");
       return thunkAPI.rejectWithValue(error);
@@ -137,9 +132,9 @@ const contentsSlice = createSlice({
       state.error = action.payload; // catch 된 error 객체를 state.error에 넣습니다.
     },
     [__postComments.fulfilled]: (state, action) => {
-      // console.log(state, action);
+      console.log(state, action);
       state.isLoading = false; // 네트워크 요청이 끝났으니, false로 변경합니다.
-      state.comments.push(action.payload); // Store에 있는 todos에 서버에서 가져온 todos를 넣습니다.
+      state.comments.push(action.meta.arg); // Store에 있는 todos에 서버에서 가져온 todos를 넣습니다.
     },
     //(3)
     //post.fulfilled는 서버에서 성공되었을때를 처리해주는 동작을 넣어줘야 한다.

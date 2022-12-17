@@ -37,22 +37,22 @@ const DetailAriticle = () => {
     <section className="DtSection">
       <div className="DtTitle">
         <span>글번호</span>
-        <p>{postlist.id} </p>
+        <p>{postlist?.id} </p>
         <span>제목</span>
-        <p>{postlist.title}</p>
+        <p>{postlist?.title}</p>
 
         <span>작성자</span>
-        <p>{postlist.name}</p>
+        <p>{postlist?.name}</p>
       </div>
       <article className="DtContent">
         <div className="DtContent2">
-          <p>{postlist.context}</p>
+          <p>{postlist?.context}</p>
         </div>
       </article>
       <div className="DtContentBtn">
         <button
           onClick={() => {
-            DeletePostHandler(postlist.id);
+            DeletePostHandler(postlist?.id);
           }}
         >
           삭제

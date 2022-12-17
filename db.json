@@ -13,7 +13,6 @@
       "context": "응원합니다 한국"
     }
   ],
-
   "comments": [
     {
       "postId": 1,
@@ -28,7 +27,72 @@
     {
       "postId": 2,
       "id": 3,
-      "comment": "입력창"
+      "comment": "123"
+    },
+    {
+      "postId": 2,
+      "id": 1671260125756,
+      "comment": "123456"
+    },
+    {
+      "postId": 2,
+      "id": 1671260594868,
+      "comment": "12342134"
+    },
+    {
+      "postId": 2,
+      "id": 1671260643830,
+      "comment": "qwe"
+    },
+    {
+      "postId": 2,
+      "id": 1671260645765,
+      "comment": "qwe"
+    },
+    {
+      "postId": 2,
+      "id": 1671260646272,
+      "comment": "qwe"
+    },
+    {
+      "postId": 2,
+      "id": 1671260683373,
+      "comment": "qwe123"
+    },
+    {
+      "postId": 2,
+      "id": 1671260725258,
+      "comment": "qwe123123213"
+    },
+    {
+      "postId": 2,
+      "id": 1671260725675,
+      "comment": "qwe123123213"
+    },
+    {
+      "postId": 2,
+      "id": 1671261441005,
+      "comment": "asdf"
+    },
+    {
+      "postId": 2,
+      "id": 1671261653709,
+      "comment": "zxcv"
+    },
+    {
+      "postId": 2,
+      "id": 1671261890386,
+      "comment": "123213"
+    },
+    {
+      "postId": 2,
+      "id": 1671261891364,
+      "comment": "123213"
+    },
+    {
+      "postId": 2,
+      "id": 1671261914247,
+      "comment": "lkjfh"
     }
   ]
 }

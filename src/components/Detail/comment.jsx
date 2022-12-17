@@ -14,12 +14,12 @@ import "./comment.css";
 //----------------
 //(1)
 //db에서 comments 라는 집이 생김!
-//modules에서 서버에 요청할 때 에도 주소를 바꿔줘야 함
+//modules에서 서버에 요청할때에도 주소를 바꿔줘야 함
 //useSelector 부분에서 comments라는 data 받아와야됨!
-//댓글을 입력하면 서버에 댓글입력한 내용을 넣어줘야 함 -> 서버 주소: comments라는 서버주소
+//댓글을 입력하면 서버에 댓글입력한 내용을 넣어줘야 함(POST 요청을 보냄) -> 서버 주소: comments라는 서버주소
 //댓글은 payload가 됨!!
 // useSelector 부분은 extrareducer에서 보내준 로딩일때 에러일때 성공되었을때(값)을 받는다
-//31번째 comments가 모든 댓글이 됨
+//32번째 comments가 모든 댓글이 됨
 
 //-----------------
 
@@ -33,7 +33,7 @@ function CommentInput() {
   console.log("코멘트입니다:", comments);
 
   const commentlist = comments.filter((comment) => {
-    return comment.postId === Number(id);
+    return comment?.postId === Number(id);
   });
   console.log("코멘트 나오나?", commentlist);
 
@@ -45,7 +45,7 @@ function CommentInput() {
     dispatch(
       __postComments({
         postId: 2,
-        id: 3,
+        id: Date.now(),
         comment: comment,
       })
     );
